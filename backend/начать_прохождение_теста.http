@@ -1,0 +1,18 @@
+###
+
+# curl --location --request POST 'http://localhost:8080/api/attempt/check'
+#--header 'Content-Type: application/json'
+#--data-raw '{"examId":7,"surname":"Я","name":"Я","patronymic":"Я","groupNumber":"12"}'
+POST http://localhost:8080/api/attempt/check
+Content-Type: application/json
+
+{
+  "examId": 7,
+  "surname": "Я",
+  "name": "Я",
+  "patronymic": "Я",
+  "groupNumber": "12"
+}
+
+###
+

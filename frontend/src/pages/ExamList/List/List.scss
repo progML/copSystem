@@ -1,0 +1,56 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.testList {
+    margin-top: 50px;
+
+    &Item {
+        margin: 0 100px 24px 0;
+        border: 2px solid black;
+        height: 60px;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        &:hover {
+            border-color: $hover-color;
+        }
+
+        &.isEntitled .testName {
+            width: calc(100% - 100px);
+            padding-right: 0;
+        }
+
+        .testName {
+            padding: 0 20px;
+            height: 100%;
+            justify-content: flex-start;
+            color: black;
+
+            &:hover {
+                color: $hover-color;
+            }
+
+            span {
+                @include ellipsis;
+            }
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 50px;
+            padding: 0;
+
+            a {
+                width: 100%;
+
+                svg {
+                    height: 34px;
+                    width: 34px;
+                }
+            }
+        }
+    }
+}

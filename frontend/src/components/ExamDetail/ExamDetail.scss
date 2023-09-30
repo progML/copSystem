@@ -1,0 +1,63 @@
+@import "styles/variables";
+
+.form {
+    margin-right: 50px;
+}
+
+.card {
+    margin: 50px 0;
+    border: 1px solid black;
+
+    :global {
+        .ant-card-head {
+            border-bottom: 1px solid black;
+        }
+
+        .ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox-inner {
+            background-color: $antd-checkbox-color;
+            border-color: $antd-checkbox-color;
+
+            &:after {
+                border-color: white;
+            }
+        }
+    }
+
+    .cardTitle {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rightAnswers {
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+.examName {
+    margin-top: 50px;
+
+    &.readOnly {
+        display: flex;
+    }
+
+    input {
+        border: 1px solid black;
+    }
+}
+
+.questionNumber {
+    gap: 10px;
+
+    .check {
+        color: green;
+    }
+
+    .close {
+        color: red;
+    }
+}
+
+.controls {
+    gap: 24px;
+}

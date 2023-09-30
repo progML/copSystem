@@ -1,0 +1,16 @@
+@import "styles/mixins";
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    gap: 10px;
+
+    :global .ant-typography {
+        font-size: 28px !important;
+    }
+}
+
+.result {
+    font-weight: bold !important;
+}

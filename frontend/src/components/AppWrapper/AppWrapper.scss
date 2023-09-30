@@ -1,0 +1,42 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.header {
+    color: white;
+    font-size: 75px;
+    line-height: $header-size;
+    height: $header-size;
+    background: $header-color;
+
+    &.adminHeader {
+        background: $admin-header-color;
+    }
+
+    .logoWrapper {
+        height: 100%;
+        display: flex;
+        gap: 10px;
+
+        :global .ant-image {
+            min-width: 100px;
+            display: block;
+        }
+
+        span {
+            @include ellipsis;
+        }
+    }
+}
+
+.footer {
+    margin: 0 50px;
+    border-top: 2px solid black;
+    height: $footer-size;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    min-height: calc(100vh - $header-size - $footer-size);
+    padding: 50px 0 50px 50px;
+}

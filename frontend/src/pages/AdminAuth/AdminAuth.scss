@@ -1,0 +1,13 @@
+.formItemWrapper {
+    margin: 50px 0;
+    padding: 50px;
+    border-left: 2px solid black;
+
+    :global .ant-form-item {
+        border-bottom: 2px solid black;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

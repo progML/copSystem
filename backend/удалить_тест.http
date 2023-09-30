@@ -1,0 +1,5 @@
+# curl --location --request DELETE 'http://localhost:8080/api/exam/1'
+DELETE http://localhost:8080/api/exam/3
+
+###
+

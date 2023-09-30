@@ -1,0 +1,5 @@
+# curl --location --request GET 'http://localhost:8080/api/attempt/1'
+GET http://localhost:8080/api/attempt/1
+
+###
+

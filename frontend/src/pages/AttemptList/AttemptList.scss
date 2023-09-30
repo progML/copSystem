@@ -1,0 +1,41 @@
+@import "styles/mixins";
+
+.content {
+    flex-wrap: wrap;
+}
+
+.title, .side {
+    height: fit-content;
+    margin: 0;
+}
+
+.tableWrapper {
+    width: 100%;
+    padding-left: 0;
+}
+
+.grade {
+    @include grade;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attemptList {
+    border: 1px solid black;
+
+    td {
+        height: 90px;
+
+        &:nth-child(7) {
+            padding: 0 !important;
+        }
+    }
+}
+
+.controlsWrapper {
+    display: flex;
+    justify-content: center;
+}
